@@ -21,14 +21,14 @@ app.get("/", (req, res) => {
   res.send("Billing API");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 mongoose
   .connect(
     "mongodb+srv://admin:admin165@cluster0.mqluep0.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
-    app.listen(5000, () => {
+    app.listen(PORT, () => {
       console.log(`server worked on port ${PORT}`);
     });
   })
