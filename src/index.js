@@ -18,7 +18,7 @@ app.use("/products", productRouter);
 app.use("/sales", salesRouter);
 
 app.get("/", (req, res) => {
-  res.send("Billing API");
+  res.send("Billing API Test");
 });
 
 const PORT = process.env.PORT || 4000;
